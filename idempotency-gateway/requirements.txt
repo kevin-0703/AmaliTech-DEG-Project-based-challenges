@@ -1,0 +1,8 @@
+Django>=5.0
+djangorestframework
+psycopg2-binary
+django-environ
+redis
+django-redis
+gunicorn
+django-ratelimit
