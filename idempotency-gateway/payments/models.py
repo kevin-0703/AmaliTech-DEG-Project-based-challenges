@@ -1,5 +1,6 @@
 from django.db import models
 import uuid
+from django.core.serializers.json import DjangoJSONEncoder
 
 # Create your models here.
 class BaseModel(models.Model):
@@ -20,8 +21,8 @@ class IdempotencyRecord(BaseModel):
 
     idempotency_key = models.CharField(max_length=255, unique=True)
     request_hash = models.CharField(max_length=64)
-    request_body = models.JSONField()
-    response_body = models.JSONField(null=True, blank=True)
+    request_body = models.JSONField(encoder=DjangoJSONEncoder)
+    response_body = models.JSONField(encoder=DjangoJSONEncoder, null=True, blank=True)
     status_code = models.IntegerField(null=True, blank=True)
     state = models.CharField(max_length=20, choices=STATE_CHOICES, default="pending")
     expires_at = models.DateTimeField()
