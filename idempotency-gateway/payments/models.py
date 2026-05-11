@@ -3,6 +3,7 @@ import uuid
 from django.core.serializers.json import DjangoJSONEncoder
 
 # Create your models here.
+
 class BaseModel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
