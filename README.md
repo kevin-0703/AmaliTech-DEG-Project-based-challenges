@@ -1,31 +1,15 @@
-# DEG Project Challenges
+# Amalitech National Service Coding Challenge Submission
 
-This repository contains the DEG training project challenges across multiple tracks:
+Hello Reviewer,
 
-- Backend
-- Data Engineering
-- Fullstack
-- QA
-- DevOps
+Thank you for taking the time to review my submission.
 
-Each challenge is self-contained inside its folder and includes its own README with task details.
+This repository contains my solution for the **Idempotency Payment Gateway Challenge**, built as a production-inspired backend system using Django REST Framework, PostgreSQL, Redis, and Docker.
 
-## Applicant Guide
+## Main Project Documentation
 
-If you are applying, start by choosing the challenge folder that matches your track or assigned task. Then open the README inside that folder.
+Please open the project folder and review the full technical documentation here:
 
-The challenge-specific README files include:
-
-- Challenge description and requirements
-- Expected deliverables
-- Submission guidelines and deadlines (where applicable)
-- Any setup instructions or constraints
-
-## Where To Start
-
-1. Open the relevant track folder (for example, `backend/`, `data-engineering/`, or `fullstack/`).
-2. Enter the challenge project folder.
-3. Read that project's `README.md` completely before starting work.
-4. Follow the listed deliverables and submission instructions exactly.
-
-If instructions differ between this root README and a challenge README, treat the challenge README as the source of truth.
+```text
+/idempotency-gateway/README.md
+```
